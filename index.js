@@ -1,3 +1,3 @@
-import "babel-register";
-import "babel-polyfill";
-import "./server";
+require('babel-register');
+require('babel-polyfill');
+require('./server');
