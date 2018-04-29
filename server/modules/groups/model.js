@@ -27,7 +27,8 @@ GroupSchema.statics.addMeetup = async function (id, args)
   await this.findByIdAndUpdate(id, { $push: { meetups: meetup.id } });
 
   return {    meetup: await meetup.save(),
-              };
+
+  };
 };
 
 export default mongoose.model('Group', GroupSchema);
