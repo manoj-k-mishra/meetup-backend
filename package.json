@@ -29,6 +29,7 @@
     "nodemon": "^1.17.3"
   },
   "devDependencies": {
+    "eslint-config-equimper": "^2.2.2",
     "nodemon": "^1.17.3"
   }
 }
