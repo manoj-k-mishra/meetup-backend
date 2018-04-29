@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/manojmishra571980/meetup-backend#readme",
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
@@ -29,6 +30,7 @@
     "nodemon": "^1.17.3"
   },
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint-config-equimper": "^2.2.2",
     "nodemon": "^1.17.3"
   }
