@@ -52,9 +52,10 @@ export const createGroupMeetup = async (req, res) =>
          // const result = await Group.addMeetup(groupId, { title, description });
         //  console.log('/modules/groups/controller-result', result);
          //return res.status(201).json({ error: false, meetup, group });
-         const { meetup, group } = await Group.addMeetup(groupId, { title, description });
-
-         return res.status(201).json({ error: false, meetup, group });
+         const { meetup } = await Group.addMeetup(groupId, { title, description });
+        // const { meetup, group } = await Group.addMeetup(groupId, { title, description });
+         return res.status(201).json({ error: false, meetup });
+        // return res.status(201).json({ error: false, meetup, group });
       } catch (e) { return res.status(400).json({ error: true, message: '/modules/groups/controller-creategroupmeetup-Meetup cannot be created!' });  }
 }; //create groupmeetup finish
 
